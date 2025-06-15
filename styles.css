@@ -14,6 +14,7 @@ body {
 }
 
 /* Navbar Styling */
+/* ====================================================================================================== */
 .navbar {
     background: rgba(18, 18, 18, 0.9);
     backdrop-filter: blur(4px);
@@ -58,7 +59,17 @@ body {
     width: 100%;
 }
 
+/* Navbar Toggler (hamburger) - white */
+.navbar-toggler {
+    border-color: #ccc;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255, 0.8%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 /* Hero Section */
+/* ====================================================================================================== */
 .hero {
     position: relative;
     height: 75vh;
@@ -131,7 +142,29 @@ body {
     color: #eee;
 }
 
-/* Portfolio CSS*/
+
+/* Filter buttons (Categories) */
+/* ====================================================================================================== */
+.filter-btn {
+    border-color: #666;
+    color: #ddd;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #eee;
+    color: #111;
+    border-color: #eee;
+}
+
+.portfolio-item {
+    transition: all 0.4s ease;
+}
+
+/* Showcase Section */
+/* ====================================================================================================== */
 #showcase img {
     border-radius: 16px;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
@@ -183,37 +216,9 @@ body {
 }
 
 
-/* Filter buttons */
-.filter-btn {
-    border-color: #666;
-    color: #ddd;
-    background-color: transparent;
-    transition: all 0.3s ease;
-}
-
-.filter-btn:hover,
-.filter-btn.active {
-    background-color: #eee;
-    color: #111;
-    border-color: #eee;
-}
-
-/* Navbar Toggler (hamburger) - white */
-.navbar-toggler {
-    border-color: #ccc;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255, 0.8%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.portfolio-item {
-    transition: all 0.4s ease;
-}
-
 /* Inquiry Section
+/* ====================================================================================================== */
 
-  /* Image overlay text styles */
 .img-overlay-wrapper {
     position: relative;
     overflow: hidden;
@@ -247,7 +252,6 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Inquiry form dark styling */
 .form-dark {
     background-color: #1b1b1b;
     border: 1px solid #444;
@@ -266,29 +270,8 @@ body {
     box-shadow: none;
 }
 
-.footer {
-    color: #ffffff;
-}
-
-.footer-title {
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-}
-
-.footer-line {
-    width: 30px;
-    height: 2px;
-    background-color: #ffffff;
-    margin: 0 auto 10px auto;
-}
-
-.footer-text {
-    font-size: 0.9rem;
-    color: #cccccc;
-}
-
+/* Socials Section
+/* ====================================================================================================== */
 .social-icons a {
     font-size: 1.2rem;
     transition: color 0.3s;
@@ -298,29 +281,31 @@ body {
     color: #ffffff;
 }
 
+/* About Us Section
+/* ====================================================================================================== */
+
 .about-hero {
     min-height: 100vh;
     background-color: #0e0e0e;
-  }
-  
-  .hero-image {
+}
+
+.hero-image {
     background-image: url('works/Portrait/portrait4.jpg');
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
     height: 100%;
     min-height: 100vh;
-  }
-  
-  #about h2 {
+}
+
+#about h2 {
     font-size: 3rem;
-  }
-  
-  #about p {
+}
+
+#about p {
     font-size: 1.1rem;
     line-height: 1.6;
-  }
-  
+}
 
 .what-i-do-section {
     background: url('works/bg.jpg') center center / cover no-repeat;
@@ -346,6 +331,31 @@ body {
 
 .icon-box:hover i {
     transform: scale(1.2);
+}
+
+/* Footer Section
+/* ====================================================================================================== */
+.footer {
+    color: #ffffff;
+}
+
+.footer-title {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-line {
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 0 auto 10px auto;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    color: #cccccc;
 }
 
 footer .footer-line {
