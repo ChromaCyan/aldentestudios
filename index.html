@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Dente Studios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="works/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-none d-lg-block" href="#">Al Dente Studio</a>
+            <a class="navbar-brand fw-bold d-lg-none" href="#">
+                <img src="works/logo.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#showcase">Showcase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inquiry">Inquiry</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container text-center position-relative">
+            <h1>Creative Direction, <br />Design & Photography.</h1>
+            <p>I shoot because I see. I shoot because if I don’t, I don’t know who will. I shoot because I find peace in
+                being.</p>
+            <a href="#inquiry" class="btn mt-3">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Showcase -->
+    <section class="container my-5" id="showcase">
+        <h2 class="section-title">Our Works</h2>
+
+        <!-- Filter Buttons -->
+        <div class="d-flex justify-content-center mb-4 flex-wrap gap-2">
+            <button class="btn btn-outline-dark filter-btn active" data-filter="all">All (12)</button>
+            <button class="btn btn-outline-dark filter-btn" data-filter="wedding">Wedding (4)</button>
+            <button class="btn btn-outline-dark filter-btn" data-filter="portrait">Portrait (4)</button>
+            <button class="btn btn-outline-dark filter-btn" data-filter="nature">Nature (4)</button>
+        </div>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-5">
+            <div class="container">
+                <div class="row g-3 portfolio-gallery">
+
+                    <!-- Weddings -->
+                    <div class="col-md-4 portfolio-item" data-category="wedding">
+                        <div class="img-overlay-wrapper">
+                            <img src="works/Wedding/wedding1.jpg" class="img-fluid rounded"
+                                alt="Bride and groom walking hand-in-hand">
+                            <div class="img-title">
+                                <span class="category">WEDDING</span><br>
+                                <span class="title">Eternal Vows</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 portfolio-item" data-category="wedding">
+                        <div class="img-overlay-wrapper">
+                            <img src="works/Wedding/wedding2.jpg" class="img-fluid rounded"
+                                alt="Couple under floral arch">
+                            <div class="img-title">
+                                <span class="category">WEDDING</span><br>
+                                <span class="title">Garden Promise</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 portfolio-item" data-category="wedding">
+                        <div class="img-overlay-wrapper">
+                            <img src="works/Wedding/wedding3.jpg" class="img-fluid rounded" alt="Wedding ring close-up">
+                            <div class="img-title">
+                                <span class="category">WEDDING</span><br>
+                                <span class="title">Forever Begins</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 portfolio-item" data-category="wedding">
+                        <div class="img-overlay-wrapper">
+                            <img src="works/Wedding/wedding4.jpg" class="img-fluid rounded"
+                                alt="Bride looking over balcony">
+                            <div class="img-title">
+                                <span class="category">WEDDING</span><br>
+                                <span class="title">Golden Light</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portraits -->
+                    <div class="col-md-4 portfolio-item" data-category="portrait">
+                        <div class="img-overlay-wrapper">
+                            <img src="works/Portrait/portrait1.webp" class="img-fluid rounded"
+                                alt="Close-up of woman with blue eyes">
+                            <div class="img-title">
+                                <span class="category">PORTRAIT</span><br>
+                                <span class="title">Blue Gaze</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 portfolio-item" data-category="portrait">
+                        <div class="img-overlay-wrapper">
+                            <img src="works/Portrait/portrait2.jpg" class="img-fluid rounded"
+                                alt="Man in moody lighting">
+                            <div class="img-title">
+                                <span class="category">PORTRAIT</span><br>
+                                <span class="title">Moody Muse</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 portfolio-item" data-category="portrait">
+                        <div class="img-overlay-wrapper">
+                            <img src="works/Portrait/portrait3.jpg" class="img-fluid rounded"
+                                alt="Profile view of woman in red">
+                            <div class="img-title">
+                                <span class="category">PORTRAIT</span><br>
+                                <span class="title">Crimson Charm</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 portfolio-item" data-category="portrait">
+                        <div class="img-overlay-wrapper">
+                            <img src="works/Portrait/portrait4.jpg" class="img-fluid rounded"
+                                alt="Young man looking into distance">
+                            <div class="img-title">
+                                <span class="category">PORTRAIT</span><br>
+                                <span class="title">Quiet Strength</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nature -->
+                    <div class="col-md-4 portfolio-item" data-category="nature">
+                        <div class="img-overlay-wrapper">
+                            <img src="works/Nature/nature1.jpg" class="img-fluid rounded" alt="Forest and misty lake">
+                            <div class="img-title">
+                                <span class="category">NATURE</span><br>
+                                <span class="title">Misty Wilderness</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 portfolio-item" data-category="nature">
+                        <div class="img-overlay-wrapper">
+                            <img src="works/Nature/nature2.webp" class="img-fluid rounded" alt="Forest and misty lake">
+                            <div class="img-title">
+                                <span class="category">NATURE</span><br>
+                                <span class="title">Misty Wilderness</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 portfolio-item" data-category="nature">
+                        <div class="img-overlay-wrapper">
+                            <img src="works/Nature/nature3.jpg" class="img-fluid rounded" alt="Forest and misty lake">
+                            <div class="img-title">
+                                <span class="category">NATURE</span><br>
+                                <span class="title">Misty Wilderness</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 portfolio-item" data-category="nature">
+                        <div class="img-overlay-wrapper">
+                            <img src="works/Nature/nature4.png" class="img-fluid rounded" alt="Forest and misty lake">
+                            <div class="img-title">
+                                <span class="category">NATURE</span><br>
+                                <span class="title">Misty Wilderness</span>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-hero text-white d-flex align-items-center">
+            <div class="container-fluid px-0">
+              <div class="row gx-0">
+                <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+                  <h2 class="fw-bold display-4">Hello!<br>We’re Al Dente Studio</h2>
+                  <p class="mt-3">
+                    Since today, film photography has already become basically history. Now we talk about digital, emotion, and timeless captures.
+                  </p>
+                  <p class="text-light">
+                    We specialize in creative direction, photography, and storytelling that breathes life into every moment. Let’s create something extraordinary together.
+                  </p>
+                  <a href="#inquiry" class="btn btn-outline-light mt-4">Contact us!</a>
+                </div>
+                <div class="col-lg-6 hero-image d-none d-lg-block"></div>
+              </div>
+            </div>
+          </section>
+          
+        <section class="what-i-do-section text-center">
+            <h5 class="text-uppercase text-secondary mb-2" style="letter-spacing: 2px;">What I Do</h5>
+            <p class="lead mb-5 px-3 px-md-5">
+                The services I provided are the following below.
+            </p>
+        
+            <div class="row justify-content-center g-5 px-3 px-md-5">
+                <div class="col-md-4">
+                    <div class="icon-box">
+                        <i class="bi bi-image fs-1 mb-3"></i>
+                        <h6 class="fw-bold">PHOTOGRAPHY</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-box">
+                        <i class="bi bi-layers fs-1 mb-3"></i>
+                        <h6 class="fw-bold">PHOTOSHOP</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-box">
+                        <i class="bi bi-camera-reels fs-1 mb-3"></i>
+                        <h6 class="fw-bold">VIDEOGRAPHER</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inquiry Section -->
+        <section class="container my-5" id="inquiry">
+            <h2 class="section-title">Socials</h2>
+            <!-- Social Buttons -->
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="https://www.facebook.com/BugarinJoshBrian/" class="btn btn-outline-light btn-lg rounded-circle"
+                    style="width: 60px; height: 60px;">
+                    <i class="bi bi-facebook fs-4"></i>
+                </a>
+                <a href="https://www.facebook.com/BugarinJoshBrian/" class="btn btn-outline-light btn-lg rounded-circle"
+                    style="width: 60px; height: 60px;">
+                    <i class="bi bi-twitter fs-4"></i>
+                </a>
+                <a href="https://www.facebook.com/BugarinJoshBrian/" class="btn btn-outline-light btn-lg rounded-circle"
+                    style="width: 60px; height: 60px;">
+                    <i class="bi bi-instagram fs-4"></i>
+                </a>
+                <a href="https://www.facebook.com/BugarinJoshBrian/" class="btn btn-outline-light btn-lg rounded-circle"
+                    style="width: 60px; height: 60px;">
+                    <i class="bi bi-envelope fs-4"></i>
+                </a>
+            </div>
+
+            <!-- Rounded Container -->
+            <div class="p-4 p-md-5 rounded-4 bg-dark">
+                <div class="row align-items-center g-5">
+                    <!-- Left Image -->
+                    <div class="col-md-6">
+                        <img src="works/Portrait/portrait1.webp" class="img-fluid rounded" alt="Inquiry Image">
+                    </div>
+
+                    <!-- Right Form -->
+                    <div class="col-md-6 text-white">
+                        <h5 class="text-uppercase fw-bold mb-3">Photoshoot Recording</h5>
+                        <p class="mb-4">Where does one find a real photographer nowadays? We can deliver a top
+                            photographer
+                            for your party or wedding.</p>
+
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control form-dark" placeholder="Your Name*">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control form-dark" placeholder="Your Phone*">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="date" class="form-control form-dark">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control form-dark" placeholder="Time">
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-select form-dark">
+                                        <option selected disabled>Persons</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3+</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-select form-dark">
+                                        <option selected disabled>Category</option>
+                                        <option>Wedding</option>
+                                        <option>Portrait</option>
+                                        <option>Nature</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea rows="4" class="form-control form-dark"
+                                        placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-outline-light px-4">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <br>
+
+        <br>
+
+        <br>
+        
+        <footer class="footer bg-dark text-light py-5">
+            <div class="text-center px-3">
+                <div class="row mb-4 g-5 justify-content-center">
+                    <div class="col-md-4">
+                        <h6 class="footer-title">SEND EMAIL</h6>
+                        <div class="footer-line"></div>
+                        <p>info@example.com</p>
+                        <p>contact@example.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="footer-title">CALL US</h6>
+                        <div class="footer-line"></div>
+                        <p class="fs-5 fw-light">+63 991 800 3293</p>
+                        <p class="fs-5 fw-light">09918003293</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="footer-title">VISIT US</h6>
+                        <div class="footer-line"></div>
+                        <p>136, Amado St, Dagupan City</p>
+                        <p>Pangasinan, Philippines</p>
+                    </div>
+                </div>
+                <hr class="border-secondary mx-auto" style="max-width: 1000px;">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center px-3 pt-3">
+                    <p class="mb-2 mb-md-0 small">© 2025 — Bogart.Prod <a href="#" class="text-muted">Socials</a></p>
+                    <div class="social-icons">
+                        <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+          
+
+        <script src="filter.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
